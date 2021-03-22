@@ -78,7 +78,8 @@ class XlsxTemplate
     public splitRange(range : string) : RangeSplit;
     public joinRange(range : RangeSplit) : string;
     public extractPlaceholders(templateString : string) : TemplatePlaceholder[];
-    
+    public fixColumnsWidths(sheet : any) : any
+
     // need typing properly
     protected _rebuild() : void;
     protected loadSheets(prefix : any, workbook : etree.ElementTree, workbookRels : any) : any[];
